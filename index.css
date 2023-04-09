@@ -91,3 +91,17 @@ hr {
     width: 100%;
     margin: 35px auto;
 }
+
+@media screen and (max-width: 540px) {
+    .container {
+        max-width: 300px;
+    }
+
+    .results {
+        width: 145px;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+    }
+}
