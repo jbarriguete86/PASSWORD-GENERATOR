@@ -10,6 +10,10 @@ console.log(password2)
 function generatePassword(){
     count++
     let passwordLength = prompt("How long should the password be?")
+    if (passwordLength > 15){
+    alert("The password cannot be more than 15 characters long, so we will set the length as 15 for you.")
+    passwordLength = 15
+    }
     if (count === 0){
 for (let i = 0 ; i < passwordLength ; i++) {
     password1.textContent += characters[randomize()]
@@ -29,6 +33,3 @@ function randomize(){
     let random = Math.floor(Math.random()* characters.length)
     return random
 }
-
-
-
